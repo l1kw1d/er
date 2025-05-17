@@ -382,44 +382,45 @@ Nos expertes en soins vous offriront un regard éclatant, une peau radieuse et b
           <p class="block-lg">Offrez-vous un moment de détente en réservant votre soin dès maintenant. Remplissez le formulaire ci-dessous, et nous vous contacterons rapidement pour confirmer votre rendez-vous.</p>
           <div class="row justify-content-center">
             <div class="col-md-10 col-xl-8">
-              <!-- FormCarry Form-->
-              <form class="rd-mailform text-start" data-form-output="form-output-global" data-form-type="contact" method="post" action="https://formcarry.com/s/mPke1iTz0vW">
-                <div class="row row-20 justify-content-center">
-                  <div class="col-lg-6">
-                    <div class="form-wrap">
-                      <label class="form-label" for="contact-name">Votre nom</label>
-                      <input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required">
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="form-wrap">
-                      <label class="form-label" for="contact-email">Votre courriel</label>
-                      <input class="form-input" id="contact-email" type="email" name="email" data-constraints="@Email @Required">
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="form-wrap">
-                      <label class="form-label" for="contact-phone">Votre tel:</label>
-                      <input class="form-input" id="contact-phone" type="text" name="phone" data-constraints="@Numeric @Required">
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="form-wrap">
-                      <label class="form-label" for="date">Date Time</label>
-                      <input class="form-input" id="date" type="text" name="date" data-time-picker="date" data-constraints="@Required">
-                    </div>
-                  </div>
-                  <div class="col-lg-12">
-                    <div class="form-wrap">
-                      <label class="form-label" for="contact-message">Votre commentaire</label>
-                      <textarea class="form-input" id="contact-message" name="message" data-constraints="@Required"></textarea>
-                    </div>
-                    <div class="form-button group-sm text-center">
-                      <button class="button button-primary" type="submit">Prendre un rendez-vous maintenant</button>
-                    </div>
-                  </div>
-                </div>
-              </form>
+ <!-- FormCarry Form-->
+<form class="rd-mailform text-start" method="POST" action="https://formcarry.com/s/mPke1iTz0vW" enctype="application/x-www-form-urlencoded" onsubmit="this.setAttribute('accept','text/html,application/json'); return true;">
+  <div class="row row-20 justify-content-center">
+    <div class="col-lg-6">
+      <div class="form-wrap">
+        <label class="form-label" for="contact-name">Votre nom</label>
+        <input class="form-input" id="contact-name" type="text" name="name" required>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="form-wrap">
+        <label class="form-label" for="contact-email">Votre courriel</label>
+        <input class="form-input" id="contact-email" type="email" name="email" required>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="form-wrap">
+        <label class="form-label" for="contact-phone">Votre tel:</label>
+        <input class="form-input" id="contact-phone" type="tel" name="phone" required>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="form-wrap">
+        <label class="form-label" for="date">Date Time</label>
+        <input class="form-input" id="date" type="text" name="date" data-time-picker="date" required>
+      </div>
+    </div>
+    <div class="col-lg-12">
+      <div class="form-wrap">
+        <label class="form-label" for="contact-message">Votre commentaire</label>
+        <textarea class="form-input" id="contact-message" name="message" required></textarea>
+      </div>
+      <div class="form-button group-sm text-center">
+        <button class="button button-primary" type="submit">Prendre un rendez-vous maintenant</button>
+      </div>
+    </div>
+  </div>
+</form>
+
             </div>
           </div>
         </div>
