@@ -65,9 +65,9 @@
                 <div class="header-info">
                   <ul class="list-inline list-inline-md">
                     <li>
-                      <div class="unit unit-spacing-xs align-items-center">
-                        <div class="unit-left fw-bold">Téléphone:</div>
-                        <div class="unit-body"><a href="tel:4502679311">(450) 267-9311</a></div>
+                      <div class="unit unit-spacing-xs align-items-center" style="font-size: 1.1rem; color: inherit;">
+                        <div class="unit-left fw-bold" style="color: inherit;">Téléphone:</div>
+                        <div class="unit-body"><a href="tel:4502679311" style="font-size: 1.1rem; color: inherit;">(450) 267-9311</a></div>
                       </div>
                     </li>
                     <li>
@@ -104,9 +104,7 @@
                       <li class="rd-nav-item"><a class="rd-nav-link" href="notre-histoire.html">À propos</a>
                         
                       </li>
-                      <li class="rd-nav-item"><a class="rd-nav-link" href="services.html">Nos Services</a>
-                      </li>
-                      <li class="rd-nav-item"><a class="rd-nav-link" href="#">Forfaits & Produits</a>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="services-produits.html">Services & Produits</a>
                       </li>
                       <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">Nous joindre</a>
                       </li>
@@ -120,15 +118,61 @@
       </header>
       <section class="section section-page-title novi-bg novi-bg-img" style="background-image: url(images/page-title-2-1920x305.jpg); background-size: cover;">
         <div class="container">
-          <h1 class="page-title">Services</h1>
+          <h1 class="page-title">Grid Gallery</h1>
         </div>
       </section>
       <section class="section breadcrumbs-custom novi-bg novi-bg-img">
         <div class="container">
           <ul class="breadcrumbs-custom-path">
-            <li><a href="index.html">Acceuil</a></li>
-            <li class="active">Services</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="grid-gallery.html">Gallery</a></li>
+            <li class="active">Grid Gallery</li>
           </ul>
+        </div>
+      </section>
+      <section class="section section-lg bg-default novi-bg novi-bg-img text-center">
+        <div class="container">
+          <h2>Grid Gallery</h2>
+          <div class="divider-lg"></div>
+          <p class="block-lg">Check out the full portfolio of our works including haircuts, custom makeup, exclusive manicure and pedicure, and more. All these works were performed by our skilled estheticians, manicurists, and cosmetologists.</p>
+          <div class="row row-30">
+            <!-- Isotope Filters-->
+            <div class="col-lg-12">
+              <div class="isotope-filters isotope-filters-horizontal">
+                <button class="isotope-filters-toggle button button-sm button-primary" data-custom-toggle="#isotope-filters" data-custom-toggle-disable-on-blur="true">Filter<span class="caret"></span></button>
+                <ul class="isotope-filters-list" id="isotope-filters">
+                  <li><a class="active" data-isotope-filter="*" data-isotope-group="gallery" href="#">All</a></li>
+                  <li><a data-isotope-filter="Hair" data-isotope-group="gallery" href="#">Hair </a></li>
+                  <li><a data-isotope-filter="makeup" data-isotope-group="gallery" href="#">makeup</a></li>
+                  <li><a data-isotope-filter="manicure" data-isotope-group="gallery" href="#">manicure & pedicure</a></li>
+                  <li><a data-isotope-filter="other" data-isotope-group="gallery" href="#">other  </a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- Isotope Content-->
+            <div class="col-lg-12">
+              <div class="isotope row" data-isotope-layout="masonry" data-isotope-group="gallery" data-lightgallery="group" data-column-class=".col-sm-6.col-lg-4">
+                <div class="col-sm-6 col-lg-4 isotope-item" data-filter="other"><a class="gallery-item" data-lightgallery="item" href="images/gallery-1-1200x800_original.jpg"><img src="images/gallery-1-570x570.jpg" alt="" width="570" height="570"/><span class="gallery-item-title">Image #1</span><span class="gallery-item-button"></span></a>
+                </div>
+                <div class="col-sm-6 col-lg-4 isotope-item" data-filter="manicure"><a class="gallery-item" data-lightgallery="item" href="images/grid-gallery-1-570x570_original.jpg"><img src="images/grid-gallery-1-570x570.jpg" alt="" width="570" height="570"/><span class="gallery-item-title">Image #2</span><span class="gallery-item-button"></span></a>
+                </div>
+                <div class="col-sm-6 col-lg-4 isotope-item" data-filter="makeup"><a class="gallery-item" data-lightgallery="item" href="images/grid-gallery-2-570x570_original.jpg"><img src="images/grid-gallery-2-570x570.jpg" alt="" width="570" height="570"/><span class="gallery-item-title">Image #3</span><span class="gallery-item-button"></span></a>
+                </div>
+                <div class="col-sm-6 col-lg-4 isotope-item" data-filter="Hair"><a class="gallery-item" data-lightgallery="item" href="images/gallery-2-800x1200_original.jpg"><img src="images/gallery-2-570x570.jpg" alt="" width="570" height="570"/><span class="gallery-item-title">Image #4</span><span class="gallery-item-button"></span></a>
+                </div>
+                <div class="col-sm-6 col-lg-4 isotope-item" data-filter="makeup"><a class="gallery-item" data-lightgallery="item" href="images/grid-gallery-3-570x570_original.jpg"><img src="images/grid-gallery-3-570x570.jpg" alt="" width="570" height="570"/><span class="gallery-item-title">Image #5</span><span class="gallery-item-button"></span></a>
+                </div>
+                <div class="col-sm-6 col-lg-4 isotope-item" data-filter="manicure"><a class="gallery-item" data-lightgallery="item" href="images/grid-gallery-4-570x570_original.jpg"><img src="images/grid-gallery-4-570x570.jpg" alt="" width="570" height="570"/><span class="gallery-item-title">Image #6</span><span class="gallery-item-button"></span></a>
+                </div>
+                <div class="col-sm-6 col-lg-4 isotope-item" data-filter="makeup"><a class="gallery-item" data-lightgallery="item" href="images/gallery-4-1200x800_original.jpg"><img src="images/gallery-4-570x570.jpg" alt="" width="570" height="570"/><span class="gallery-item-title">Image #7</span><span class="gallery-item-button"></span></a>
+                </div>
+                <div class="col-sm-6 col-lg-4 isotope-item" data-filter="Hair"><a class="gallery-item" data-lightgallery="item" href="images/grid-gallery-5-570x570_original.jpg"><img src="images/grid-gallery-5-570x570.jpg" alt="" width="570" height="570"/><span class="gallery-item-title">Image #8</span><span class="gallery-item-button"></span></a>
+                </div>
+                <div class="col-sm-6 col-lg-4 isotope-item" data-filter="makeup"><a class="gallery-item" data-lightgallery="item" href="images/gallery-5-800x1138_original.jpg"><img src="images/gallery-5-570x570.jpg" alt="" width="570" height="570"/><span class="gallery-item-title">Image #9</span><span class="gallery-item-button"></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="section section-lg bg-default novi-bg novi-bg-img">
@@ -164,22 +208,22 @@
           <div class="row row-novi g-0 pricing-box-modern justify-content-lg-end">
             <div class="col-sm-6 col-lg-4">
               <div class="pricing-box-inner box-left">
-                <h2>Schedule</h2>
+                <h2>Notre horaire</h2>
                 <ul class="list-md pricing-box-inner-list">
                   <li>
-                    <h4>Monday-Friday</h4>
-                    <p>10am – 8pm</p>
+                    <h4>Mercredi-Vendredi</h4>
+                    <p>10AM – 17PM</p>
                   </li>
                   <li>
-                    <h4>Saturday</h4>
-                    <p>10am – 6pm</p>
+                    <h4>Samedi</h4>
+                    <p>11AM – 17PM</p>
                   </li>
                   <li>
-                    <h4>Sunday</h4>
-                    <p>closed</p>
+                    <h4>Dimanche</h4>
+                    <p>Fermée</p>
                   </li>
                 </ul>
-                <p>We will be glad to see you anytime at our salon.</p><a class="button-link button-link-icon" href="appointment.html">make an appointment  <span class="icon fa-arrow-right icon-primary"></span></a>
+                <p>Nous serons heureux de vous voir à tout moment dans notre salon.</p><a class="button-link button-link-icon" href="contacts.html">Prendre rendez-vous  <span class="icon fa-arrow-right icon-primary"></span></a>
               </div>
             </div>
             <div class="d-none d-lg-block col-lg-4 position-relative img-wrap"><img src="images/home-4-6-498x688.jpg" alt="" width="498" height="688"/>
@@ -197,7 +241,7 @@
                     <p>from $35.00</p>
                   </li>
                   <li>
-                    <h4>Nail Extension</h4>
+                    <h4>Extension ongles</h4>
                     <p>from $60.00</p>
                   </li>
                   <li>
@@ -205,7 +249,7 @@
                     <p>from $70.00</p>
                   </li>
                   <li>
-                    <h4>Nail Design</h4>
+                    <h4>Design ongles</h4>
                     <p>from $50.00</p>
                   </li>
                 </ul>
@@ -214,6 +258,7 @@
           </div>
         </div>
       </section>
+      
           <!-- Page Footer-->
       <!-- Google map-->
       <section class="section">
@@ -233,8 +278,7 @@
             <ul class="rd-navbar-nav">
               <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Accueil</a></li>
               <li class="rd-nav-item"><a class="rd-nav-link" href="notre-histoire.html">À propos</a></li>
-              <li class="rd-nav-item"><a class="rd-nav-link" href="services.html">Nos Services</a></li>
-              <li class="rd-nav-item"><a class="rd-nav-link" href="#">Forfaits & Produits</a></li>
+              <li class="rd-nav-item"><a class="rd-nav-link" href="services-produits.html">Services & Produits</a></li>
               <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">Nous joindre</a></li>
             </ul>
           </div>
